@@ -105,13 +105,26 @@ def _link_jars():
         print("Could not find jars directory in SPARK_HOME.", file=sys.stderr)
         sys.exit(-1)
 
+    # Check if there are old soft links of both jars: pmml4s and pmml4s-spark
+    old_links = []
+    for jar in os.listdir(spark_home_jars):
+        if jar.startswith("pmml4s_") or jar.startswith("pmml4s-spark_"):
+            if os.path.islink(os.path.join(spark_home_jars, jar)):
+                old_links.append(jar)
+                os.remove(os.path.join(spark_home_jars, jar))
+
     jars = []
     for jar in os.listdir(pypmml_spark_home_jars):
         if jar.endswith(".jar"):
             if not os.path.exists(os.path.join(spark_home_jars, jar)):
                 os.symlink(os.path.join(pypmml_spark_home_jars, jar), os.path.join(spark_home_jars, jar))
             jars.append(jar)
-    print("Totally {0} jars are linked into Spark successfully.".format(len(jars)))
+
+    if old_links:
+        print("Totally {0} jars are linked into Spark with {1} jar(s) unlinked successfully.".format(
+            len(jars), len(old_links)))
+    else:
+        print("Totally {0} jars are linked into Spark successfully.".format(len(jars)))
 
 
 if __name__ == "__main__":
