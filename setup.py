@@ -23,7 +23,7 @@ setup(
     },
     # include_package_data=True,
     install_requires=[
-        "pyspark>=2.0.0", "py4j"
+        "pyspark>=2.4.0", "py4j"
     ],
     scripts=scripts,
     url="https://github.com/autodeployai/pypmml-spark",

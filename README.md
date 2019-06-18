@@ -7,7 +7,7 @@ _PyPMML-Spark_ is the Python API for [PMML4S-Spark](https://github.com/autodeplo
  - Python 2.7 or >= 3.5
 
 ## Dependencies
-  - PySpark
+  - PySpark >= 2.4.0
   
 ## Installation
 
