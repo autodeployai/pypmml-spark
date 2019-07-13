@@ -1,6 +1,6 @@
 # PyPMML-Spark
 
-_PyPMML-Spark_ is the Python API for [PMML4S-Spark](https://github.com/autodeployai/pmml4s-spark) based on PySpark.
+_PyPMML-Spark_ is a Python PMML scoring library for PySpark as SparkML Transformer, it really is the Python API for [PMML4S-Spark](https://github.com/autodeployai/pmml4s-spark).
 
 ## Prerequisites
  - Java >= 1.8
