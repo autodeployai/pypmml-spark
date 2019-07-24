@@ -22,9 +22,7 @@ setup(
         "pypmml_spark.jars": ["*.jar"]
     },
     # include_package_data=True,
-    install_requires=[
-        "pyspark>=2.4.0", "py4j"
-    ],
+    install_requires=["pyspark>=2.4.0"],
     scripts=scripts,
     url="https://github.com/autodeployai/pypmml-spark",
     download_url="https://github.com/autodeployai/pypmml-spark/archive/v" + VERSION + ".tar.gz",
