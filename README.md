@@ -50,6 +50,18 @@ After that, you need to do more to use it in Spark that must know those jars in 
     score_df = model.transform(df)
     ```
 
+## Use PMML in Scala or Java
+See the [PMML4S](https://github.com/autodeployai/pmml4s) project. _PMML4S_ a PMML scoring library for Scala. It provides both Scala and Java Evaluator API for PMML.
+
+## Use PMML in Python
+See the [PyPMML](https://github.com/autodeployai/pypmml) project. _PyPMML_ is a Python PMML scoring library, it really is the Python API for PMML4S.
+
+## Use PMML in Spark
+See the [PMML4S-Spark](https://github.com/autodeployai/pmml4s-spark) project. _PMML4S-Spark_ is a PMML scoring library for Spark as SparkML Transformer.
+
+## Deploy PMML as REST API
+See the [DaaS](https://www.autodeploy.ai/) system that deploys AI & ML models in production at scale on Kubernetes.
+
 ## Support
 If you have any questions about the _PyPMML-Spark_ library, please open issues on this repository.
 
