@@ -51,7 +51,7 @@ After that, you need to do more to use it in Spark that must know those jars in 
     ```
 
 ## Use PMML in Scala or Java
-See the [PMML4S](https://github.com/autodeployai/pmml4s) project. _PMML4S_ a PMML scoring library for Scala. It provides both Scala and Java Evaluator API for PMML.
+See the [PMML4S](https://github.com/autodeployai/pmml4s) project. _PMML4S_ is a PMML scoring library for Scala. It provides both Scala and Java Evaluator API for PMML.
 
 ## Use PMML in Python
 See the [PyPMML](https://github.com/autodeployai/pypmml) project. _PyPMML_ is a Python PMML scoring library, it really is the Python API for PMML4S.

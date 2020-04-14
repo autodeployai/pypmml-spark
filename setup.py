@@ -26,7 +26,7 @@ setup(
     scripts=scripts,
     url="https://github.com/autodeployai/pypmml-spark",
     download_url="https://github.com/autodeployai/pypmml-spark/archive/v" + VERSION + ".tar.gz",
-    author="AutoDeploy AI",
+    author="AutoDeployAI",
     author_email="autodeploy.ai@gmail.com",
     license="Apache License 2.0",
     classifiers=[
