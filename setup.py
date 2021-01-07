@@ -12,7 +12,7 @@ with open("README.md", "r") as fh:
 scripts = ["pypmml_spark/link_pmml4s_jars_into_spark.py"]
 
 setup(
-    name="pypmml-spark",
+    name="pypmml-spark2",
     version=VERSION,
     description="Python PMML scoring library for PySpark as SparkML Transformer",
     long_description=long_description,
