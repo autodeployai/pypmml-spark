@@ -14,7 +14,7 @@ scripts = ["pypmml_spark/link_pmml4s_jars_into_spark.py"]
 setup(
     name="pypmml-spark2",
     version=VERSION,
-    description="Python PMML scoring library for PySpark as SparkML Transformer",
+    description="Python PMML scoring library for PySpark 2.x as SparkML Transformer",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=["pypmml_spark", "pypmml_spark.jars"],
