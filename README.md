@@ -7,7 +7,7 @@ _PyPMML-Spark_ is a Python PMML scoring library for PySpark as SparkML Transform
  - Python 2.7 or >= 3.5
 
 ## Dependencies
-  - PySpark >= 2.4.0, < 3.0.0
+  - PySpark >= 3.0.0
   
 ## Installation
 
@@ -60,7 +60,7 @@ See the [PyPMML](https://github.com/autodeployai/pypmml) project. _PyPMML_ is a 
 See the [PMML4S-Spark](https://github.com/autodeployai/pmml4s-spark) project. _PMML4S-Spark_ is a PMML scoring library for Spark as SparkML Transformer.
 
 ## Deploy PMML as REST API
-See the [AI-Serving](https://github.com/autodeployai/ai-serving) project. _AI-Serving_ is serving AI/ML models in the open standard formats PMML and ONNX with both HTTP and gRPC endpoints.
+See the [AI-Serving](https://github.com/autodeployai/ai-serving) project. _AI-Serving_ is serving AI/ML models in the open standard formats PMML and ONNX with both HTTP (REST API) and gRPC endpoints.
 
 ## Deploy and Manage AI/ML models at scale
 See the [DaaS](https://www.autodeploy.ai/) system that deploys AI/ML models in production at scale on Kubernetes.
