@@ -7,7 +7,10 @@ _PyPMML-Spark_ is a Python PMML scoring library for PySpark as SparkML Transform
  - Python 2.7 or >= 3.5
 
 ## Dependencies
-  - PySpark >= 2.4.0, < 3.0.0
+Module                    | PySpark
+------------------------- | ----------------------
+[pypmml-spark](https://github.com/autodeployai/pypmml-spark/tree/master)              | PySpark >= 3.0.0
+[pypmml-spark2](https://github.com/autodeployai/pypmml-spark/tree/spark-2.x)          | PySpark >= 2.4.0, < 3.0.0
   
 ## Installation
 
