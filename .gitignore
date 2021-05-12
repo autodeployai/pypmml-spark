@@ -4,6 +4,7 @@
 /build
 /dist
 /pypmml_spark.egg-info
+/pypmml_spark2.egg-info
 **/.DS_Store
 **/*.pyc
 /MANIFEST
