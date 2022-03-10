@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2017-2019 AutoDeploy AI
+# Copyright (c) 2017-2022 AutoDeploy AI
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,6 +27,9 @@ class ScoreModel(JavaTransformer):
                           typeConverter=TypeConverters.toString)
     prependInputs = Param(Params._dummy(), "prependInputs", "whether to prepend the input cols to the output data.",
                           typeConverter=TypeConverters.toBoolean)
+    supplementOutput = Param(Params._dummy(), "supplementOutput",
+                             "whether to return those predefined output fields not exist in the Output element explicitly.",
+                             typeConverter=TypeConverters.toBoolean)
 
     def __init__(self, java_model=None):
         """
@@ -59,6 +62,18 @@ class ScoreModel(JavaTransformer):
         Gets the value of prependInputs or its default value.
         """
         return self.getOrDefault(self.prependInputs)
+
+    def setSupplementOutput(self, value):
+        """
+        Sets the value of :py:attr:`supplementOutput`.
+        """
+        return self._set(supplementOutput=value)
+
+    def getSupplementOutput(self):
+        """
+        Gets the value of supplementOutput or its default value.
+        """
+        return self.getOrDefault(self.supplementOutput)
 
     @classmethod
     def fromFile(cls, name):
