@@ -41,7 +41,7 @@ class ModelTestCase(TestCase):
         out_df = model.transform(df)
         out_df.show()
         self.assertTrue(len(out_df.schema) == 11)
-        self.assertTrue(out_df.schema['PredictedValue'])
+        self.assertTrue(out_df.schema['predicted_class'])
 
     def test_from_file(self):
         df = SQLContext(self.sc).read.csv('./resources/data/Iris.csv', header='true', inferSchema='true')
@@ -64,7 +64,7 @@ class ModelTestCase(TestCase):
         out_df = model.transform(df)
         out_df.show()
         self.assertTrue(len(out_df.schema) == 6)
-        self.assertTrue(out_df.schema['PredictedValue'])
+        self.assertTrue(out_df.schema['predicted_class'])
 
 
 if __name__ == "__main__":
